@@ -1,0 +1,173 @@
+@use "../global" as *;
+
+.p-how-to-lower {
+  padding-top: $header-height;
+
+  @include mq(tb) {
+    padding-top: $header-height-md;
+  }
+  @include mq(sp) {
+    padding-top: $header-height-sm;
+  }
+}
+
+.p-how-to-lower__inner {
+  position: relative;
+  padding-top: 88px;
+  padding-bottom: 100px;
+
+  @include mq(sp) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
+.p-how-to-lower__title {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 80px;
+
+  @include mq(sp) {
+    font-size: 32px;
+    margin-top: 60px;
+  }
+
+  .p-how-to__bg-light & {
+    margin-top: 0;
+  }
+}
+
+.p-how-to-lower__title--manners{
+  margin-top: 0;
+}
+
+.p-how-to-lower__container {
+  width: 1143px;
+  max-width: 100%;
+  margin-inline:auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  @include mq(tb) {
+    gap: 60px;
+  }
+  @include mq(sp) {
+    margin-top: 40px;
+    gap: 48px;
+  }
+}
+
+.p-how-to-lower__card-wrap {
+  display: flex;
+  gap: calc(58px / 1143px * 100%);
+  align-items: center;
+
+  @include mq(tb) {
+    gap:20px;
+  }
+  @include mq(sp) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.p-how-to-lower__card {
+  width: calc(605px / 1143px * 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include mq(tb) {
+    gap: 28px;
+    width: 58%;
+  }
+
+  @include mq(sp) {
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+.p-how-to-lower__card-head {
+  display: flex;
+  align-items: center;
+  gap:30px;
+
+  @include mq(tb) {
+    gap: 20px;
+  }
+}
+
+.p-how-to-lower__card-number {
+  flex-shrink: 0;
+  img {
+    width: 150px;
+    height: 150px;
+
+    @include mq(tb) {
+      width: 120px;
+      height: 120px;
+    }
+    @include mq(sp) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.p-how-to-lower__card-title {
+  font-size: 24px;
+
+  @include mq(tb) {
+    font-size: 22px;
+  }
+
+  @include mq(sp) {
+    font-size: 20px;
+  }
+}
+
+.p-how-to-lower__card-body {//card-numberの50％
+  padding-left: calc(150px / 2);
+
+  @include mq(tb) {
+    padding-left: calc(120px / 2);
+  }
+
+  @include mq(sp) {
+    padding-left: 0;
+    width: 85%;
+    margin-inline:auto;
+  }
+}
+
+.p-how-to-lower__card-text {
+  font-size: 24px;
+
+  &:not(:first-of-type) {
+    margin-top: 20px;
+  }
+  @include mq(tb) {
+    font-size: 20px;
+  }
+  @include mq(sp) {
+    font-size: 18px;
+  }
+}
+
+.p-how-to-lower__img {
+  width: calc(480px / 1143px * 100%);
+   display: grid;
+   place-items: center;
+
+  .p-how-to-lower--w80 {
+    width: 80%;
+  }
+
+  @include mq(sp) {
+    width: 100%;
+    align-self: center;
+  }
+}

@@ -1,0 +1,70 @@
+@use "../global" as *;
+
+.p-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include mq(tb) {
+    gap: 28px;
+  }
+
+  @include mq(sp) {
+    gap: 20px;
+  }
+}
+
+
+.p-card__head {
+  display: flex;
+  align-items: center;
+  gap:30px;
+
+  @include mq(tb) {
+    gap: 20px;
+  }
+}
+
+.p-card__head-number {
+  flex-shrink: 0;
+  img {
+    width: 150px;
+    height: 150px;
+
+    @include mq(tb) {
+      width: 120px;
+      height: 120px;
+    }
+    @include mq(sp) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.p-card__head-title {
+  font-size: 24px;
+
+  @include mq(tb) {
+    font-size: 22px;
+  }
+
+  @include mq(sp) {
+    font-size: 20px;
+  }
+}
+
+.p-card__body-text {
+  font-size: 24px;
+  width: 70%;
+  margin-inline:auto;
+
+  @include mq(tb) {
+    font-size: 20px;
+  }
+
+  @include mq(sp) {
+    font-size: 18px;
+    width: 90%;
+  }
+}

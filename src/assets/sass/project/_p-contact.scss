@@ -1,0 +1,49 @@
+@use "../global" as *;
+
+.p-contact {
+  padding-top: 136px;
+  padding-bottom: 100px;
+
+  @include mq(sp) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.p-contact__title {
+  font-size: 48px;
+  font-weight: 400;
+  color: $cl-text;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -57px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(600px / $inner-width * 100%);
+    max-width: 600px;
+    height: 1px;
+    background: $bg-dark;
+
+    @include mq(sp) {
+      width: 85%;
+      bottom: -36px;
+    }
+  }
+
+  @include mq(sp) {
+    font-size: 40px;
+  }
+}
+
+.p-contact__link {
+  text-align: center;
+  margin-top: 114px;
+
+  @include mq(sp) {
+    margin-top: 80px;
+  }
+}
+

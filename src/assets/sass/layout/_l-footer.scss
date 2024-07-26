@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+.l-footer {
+  height: 120px;
+  background: $bg-dark;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  @include mq(tb) {
+    height: 100px;
+  }
+  @include mq(sp) {
+    height: 80px;
+  }
+}
+
+.l-footer__copyright {
+  color: $cl-text-white;
+  font-size: 24px;
+  text-align: center;
+  @include mq(tb) {
+    font-size: 20px;
+  }
+  @include mq(sp) {
+    font-size: 16px;
+  }
+}

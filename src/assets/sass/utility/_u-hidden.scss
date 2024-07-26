@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+.u-hidden-sp {// スマホ以下で非表示
+	@include mq("sp") {
+		display: none;
+	}
+}
+
+.u-hidden-tb {// TB以下で非表示
+	@include mq("tb") {
+		display: none;
+	}
+}
+
+.u-hidden-pc {// PCは非表示、TB以下で表示
+	display: none;
+	@include mq("tb") {
+		display: block;
+	}
+}
+
+.u-only-sp {// スマホのみ表示
+	display: none;
+	@include mq("sp") {
+		display: block;
+	}
+}
+

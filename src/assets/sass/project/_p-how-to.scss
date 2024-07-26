@@ -1,0 +1,65 @@
+@use "../global" as *;
+
+.p-how-to__bg-middle {
+  background: $bg-middle;
+  color: $cl-text-white;
+}
+
+.p-how-to__bg-light {
+  background: $bg-light;
+  color: $cl-text-2;
+}
+.p-how-to__inner {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include mq(sp) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.p-how-to__section-title {
+  position: absolute;
+  top:-27px;
+
+  @include mq(sp) {
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.p-how-to__title {
+  font-size: 36px;
+  text-align: center;
+
+  @include mq(sp) {
+    font-size: 32px;
+  }
+}
+
+.p-how-to__card-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 60px;
+  margin-top: 80px;
+
+  @include mq(tb) {
+    gap: 60px 40px;
+  }
+
+  @include mq(sp) {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 40px;
+    gap: 48px;
+  }
+}
+
+.p-how-to__learn-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* 適宜調整 */
+}
+

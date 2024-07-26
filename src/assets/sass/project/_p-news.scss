@@ -1,0 +1,47 @@
+@use "../global" as *;
+
+.p-news {
+  padding-top: 80px;
+  padding-bottom: calc(145px - 136px);
+
+  @include mq(sp) {
+    padding-bottom: 20px;
+  }
+}
+
+.p-news__container {
+  margin-top: 68px;
+  border-top: 1px solid $bg-dark;
+
+  @include mq(sp) {
+    margin-top: 40px;
+  }
+}
+
+.p-news__card {
+  margin-top: 41px;
+  color: $cl-text-2;
+  font-size: 24px;
+  display: flex;
+  gap: 20px;
+
+  @include mq(tb) {
+    font-size: 22px;
+  }
+
+  @include mq(sp) {
+    font-size: 18px;
+  }
+}
+
+.p-news__date {
+  width: 160px;
+  flex-shrink: 0;
+
+  @include mq(sp) {
+    width: 100px;
+  }
+}
+.p-news__title {
+  flex-grow: 1;
+}

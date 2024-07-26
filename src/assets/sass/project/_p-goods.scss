@@ -1,0 +1,52 @@
+@use "../global" as *;
+.p-goods {
+  padding-bottom: 93px;
+  @include mq(sp) {
+    padding-bottom: 80px;
+  }
+}
+
+.p-goods__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: calc(75px / 1200px * 100%);
+  margin-top: 112px;
+
+  @include mq(tb) {
+    gap: calc(40px / 1200px * 100%);
+  }
+
+  @include mq(sp) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+    margin-top: 40px;
+  }
+}
+
+.p-goods__card {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+
+  @include mq(sp) {
+    gap: 20px;
+  }
+}
+
+.p-goods__name {
+  color: $cl-text-2;
+  font-size: 24px;
+
+  @include mq(tb) {
+    font-size: 20px;
+  }
+}
+
+.p-goods__link {
+  text-align: center;
+  margin-top: 71px;
+
+  @include mq(sp) {
+    margin-top: 60px;
+  }
+}

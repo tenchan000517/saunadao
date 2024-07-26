@@ -1,0 +1,39 @@
+@use "../global" as *;
+
+
+.p-form__label {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.p-form__item {
+  margin-top: 13px;
+}
+
+.p-form__mail-input {
+  width: 484px;
+  max-width: 100%;
+  border: 1px solid $bg-white;
+  background: $bg-white;
+  font-size: 22px;
+  padding: 12px 20px 11px 20px;
+  color: #000;
+}
+
+.p-form__button {
+  margin-top: 35px;
+}
+.p-form__submit {
+  font-size: 24px;
+  color: $cl-text-white;
+  border-radius: 12px;
+  border: 3px solid #FFF;
+  background: #8D8D8D;
+  padding: 7px 10px 6px 10px;
+  width: 114px;
+  transition: all  0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,40 @@
+@use "../global" as *;
+
+.p-news-letter {
+  padding-top: 106px;
+  padding-bottom: 88px;
+  background: $bg-dark;
+  color: $cl-text-white;
+  @include mq(sp) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.p-news-letter__container {
+  margin-top: 65px;
+
+  @include mq(sp) {
+    margin-top: 40px;
+  }
+}
+
+.p-news-letter__text {
+  font-size: 24px;
+
+  &:not(:first-of-type) {
+    margin-top: 20px;
+  }
+
+  @include mq(sp) {
+    font-size: 18px;
+  }
+}
+
+.p-news-letter__form {
+  margin-top: 79px;
+
+  @include mq(sp) {
+    margin-top: 40px;
+  }
+}

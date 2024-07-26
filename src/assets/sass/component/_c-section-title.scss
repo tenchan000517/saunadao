@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+.c-section__title {
+  font-size: 48px;
+  font-weight: 400;
+  color: $cl-text;
+
+  @include mq(sp) {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+.c-section__title--white {
+  color: $cl-text-white;
+}

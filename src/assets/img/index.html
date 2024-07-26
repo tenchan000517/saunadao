@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+    <title>SAUNADAO</title>
+    <meta name="description" content="サウナで日本を元気にサウナーコミュニティ" />
+
+    <!--OGP設定-->
+    <meta property="og:title" content="SAUNADAO" />
+    <meta
+      property="og:description"
+      content="サウナで日本を元気にサウナーコミュニティ"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/img/ogp.png" />
+
+    <!-- Google Fonts読み込み-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+
+    <!--l-header-->
+    <header class="l-header">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo">
+          <a href="#"><img src="./assets/img/img_logo.jpg" alt="SAUNA DAO" width="521" height="501"></a>
+        </h1>
+        <div class="l-header__menu-wrap">
+          <nav class="l-header__nav">
+            <ul>
+              <li><a href="#about" class="l-header__link">ABOUT</a></li>
+              <li><a href="#goods" class="l-header__link">GOODS</a></li>
+              <li><a href="#community" class="l-header__link">COMMUNITY</a></li>
+              <li><a href="#news-letter" class="l-header__link">NEWS&nbsp;LETTER</a></li>
+            </ul>
+          </nav>
+          <div class="l-header__sns">
+            <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_x-logo--white.png" alt="X" width="2400" height="2453"></a>
+            <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_insta-logo--white.png" alt="Instagram" width="4322" height="4320"></a>
+            <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_discord-logo--white.png" alt="Discord" width="619" height="469"></a>
+          </div>
+        </div>
+        <button id="js-drawer-icon" class="l-header__open l-header__drawer-icon">
+          <span class="l-header__drawer-icon-bar"></span>
+          <span class="l-header__drawer-icon-bar"></span>
+          <span class="l-header__drawer-icon-bar"></span>
+        </button>
+      </div>
+      <div id="js-drawer-content" class="l-header__drawer-content">
+        <nav class="l-header__drawer-menu">
+          <ul>
+            <li><a href="#about" class="l-header__drawer-link">ABOUT</a></li>
+            <li><a href="#goods" class="l-header__drawer-link">GOODS</a></li>
+            <li><a href="#community" class="l-header__drawer-link">COMMUNITY</a></li>
+            <li><a href="#news-letter" class="l-header__drawer-link">NEWS&nbsp;LETTER</a></li>
+          </ul>
+        </nav>
+        <div class="l-header__drawer-sns">
+          <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_x-logo--white.png" alt="X" width="2400" height="2453"></a>
+          <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_insta-logo--white.png" alt="Instagram" width="4322" height="4320"></a>
+          <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_discord-logo--white.png" alt="Discord" width="619" height="469"></a>
+        </div>
+      </div>
+    </header><!--/end l-header-->
+
+    <!--p-fv-->
+    <section class="p-fv">
+      <div class="p-fv__inner">
+        <div class="p-fv__contents">
+          <h2 class="p-fv__title">サウナで日本を元気に</h2>
+          <h2 class="p-fv__title">サウナーコミュニティ</h2>
+          <div class="p-fv__link">
+            <a href="#" class="c-button">COMMUNITY</a>
+          </div>
+        </div>
+      </div>
+    </section><!--/end p-fv-->
+
+    <!--p-about-->
+    <section class="p-about" id="about">
+      <div class="l-inner p-about__inner">
+        <h2 class="c-section__title">ABOUT</h2>
+        <div class="p-about__container">
+          <div class="p-about__body">
+            <h3 class="p-about__title">サウナで日本を元気に</h3>
+            <p class="p-about__text">多くの人がサウナで心身共に健康になり、サウナを目的とした旅行（サ旅）や食事（サ飯）を活性化させて、</p>
+            <p class="p-about__text">特に観光資源のない地方の経済を元気にしていきたい！</p>
+            <p class="p-about__text">初心者のサポートから、震災などで被災した施設の支援まで、サウナで日本を元気にするために日々活動しています。</p>
+          </div>
+          <div class="p-about__link ">
+            <a href="#" class="c-button c-button--black u-only-sp">MORE ABOUT</a>
+          </div>
+          <div class="p-about__img">
+            <picture>
+              <source srcset="./assets/img/img_about.webp" type="image/webp">
+              <img src="./assets/img/img_about.png" alt="サウナ" width="1320" height="1292">
+            </picture>
+          </div>
+        </div>
+        <div class="p-about__link ">
+          <a href="#" class="c-button c-button--black u-hidden-sp">MORE ABOUT</a>
+        </div>
+      </div>
+    </section><!--/end p-about-->
+
+    <!--p-how-to-->
+    <section class="p-how-to">
+      <!--p-how-to__bg-middle-->
+      <div class="p-how-to__bg-middle">
+        <div class="l-inner p-how-to__inner">
+          <h2 class="c-section__title p-how-to__section-title">HOW&nbsp;TO&nbsp;SAUNA</h2>
+          <h3 class="p-how-to__title">サウナの入り方</h3>
+          <div class="p-how-to__card-wrap">
+            <div class="p-card">
+              <div class="p-card__head">
+                <div class="p-card__head-number">
+                  <img src="./assets/img/deco_STEP01.png" alt="STEP01" width="300" height="300">
+                </div>
+                <h3 class="p-card__head-title">水分補給をする</h3>
+              </div>
+              <div class="p-card__body">
+                <p class="p-card__body-text">サウナに入ることで多量の汗をかきます。そのため事前にしっかりと水分補給を行っておくことが大切です。</p>
+              </div>
+            </div>
+            <div class="p-card">
+              <div class="p-card__head">
+                <div class="p-card__head-number">
+                  <img src="./assets/img/deco_STEP02.png" alt="STEP02" width="300" height="300">
+                </div>
+                <h3 class="p-card__head-title">サウナに入る（6分～12分程度）</h3>
+              </div>
+              <div class="p-card__body">
+                <p class="p-card__body-text">頭と身体を清潔に洗い、湯船に浸かり体を温めたら身体の水分をふき取り6分～12分程度サウナに入ります。</p>
+              </div>
+            </div>
+            <div class="p-card">
+              <div class="p-card__head">
+                <div class="p-card__head-number">
+                  <img src="./assets/img/deco_STEP03.png" alt="STEP03" width="300" height="300">
+                </div>
+                <h3 class="p-card__head-title">水風呂で身体を冷やす（1～2分程度）</h3>
+              </div>
+              <div class="p-card__body">
+                <p class="p-card__body-text">サウナで十分に身体が温まったら、汗を洗い流して水風呂に入ります。水風呂に入る際は心臓に遠いところから入るようにしましょう。</p>
+              </div>
+            </div>
+            <div class="p-card">
+              <div class="p-card__head">
+                <div class="p-card__head-number">
+                  <img src="./assets/img/deco_STEP04.png" alt="STEP04" width="300" height="300">
+                </div>
+                <h3 class="p-card__head-title">外気浴をする（5分～10分程度）</h3>
+              </div>
+              <div class="p-card__body">
+                <p class="p-card__body-text">水風呂で身体を程よく冷ましたら、露天風呂の脇やサウナ室の近くに置かれている椅子でリラックスすると、頭が少しホワ～っとする心地の良い感覚を味わえます。</p>
+              </div>
+
+              <div class="p-how-to__learn-more">
+                <a href="how-to-lower.html" class="c-button">LEARN MORE</a>
+              </div>                       
+
+            </div>
+          </div>
+        </div><!--/end p-how-to__inner-->
+      </div><!--/end p-how-to__bg-middle-->
+
+      <!--p-how-to__bg-light-->
+      <div class="p-how-to__bg-light">
+        <div class="l-inner p-how-to__inner">
+          <h3 class="p-how-to__title">サウナのマナー</h3>
+          <div class="p-how-to__card-wrap">
+            <div class="p-card">
+              <div class="p-card__head">
+                <div class="p-card__head-number">
+                  <img src="./assets/img/deco_POINT01.png" alt="STEP01" width="300" height="300">
+                </div>
+                <h3 class="p-card__head-title">サウナに入る前に水滴をふく</h3>
+              </div>
+              <div class="p-card__body">
+                <p class="p-card__body-text">シャワーの水や汗をかいたまま入るとマットを濡らしてしまいますので、身体の水滴はふき取ってから入るようにしましょう。</p>
+              </div>
+            </div>
+            <div class="p-card">
+              <div class="p-card__head">
+                <div class="p-card__head-number">
+                  <img src="./assets/img/deco_POINT02.png" alt="STEP02" width="300" height="300">
+                </div>
+                <h3 class="p-card__head-title">タオルを絞って入る</h3>
+              </div>
+              <div class="p-card__body">
+                <p class="p-card__body-text">濡れた状態で持ち込むと、床が濡れて滑ったり、マットが塗れたり室温が下がり迷惑がかかるので絞ってから入りましょう。</p>
+              </div>
+            </div>
+            <div class="p-card">
+              <div class="p-card__head">
+                <div class="p-card__head-number">
+                  <img src="./assets/img/deco_POINT03.png" alt="STEP03" width="300" height="300">
+                </div>
+                <h3 class="p-card__head-title">水風呂に入る前に汗を流す</h3>
+              </div>
+              <div class="p-card__body">
+                <p class="p-card__body-text">サウナで汗をかいたまま水風呂に入ると水風呂の清潔さを保てませんので、水風呂に入る前にしっかりと汗を流しましょう。</p>
+              </div>
+            </div>
+            <div class="p-card">
+              <div class="p-card__head">
+                <div class="p-card__head-number">
+                  <img src="./assets/img/deco_POINT04.png" alt="STEP04" width="300" height="300">
+                </div>
+                <h3 class="p-card__head-title">水風呂では潜らない</h3>
+              </div>
+              <div class="p-card__body">
+                <p class="p-card__body-text">水風呂で潜ると、汗や皮脂が流れ出てしまい不衛生です。水風呂は多くの方が利用する浴槽ですので潜る行為は避けましょう。</p>
+              </div>
+            </div>
+          </div>
+        </div><!--/end p-how-to__inner-->
+      </div><!--/end p-how-to__bg-light-->
+    </section><!--/end p-how-to-->
+
+    <!--p-community-->
+    <section class="p-community" id="community">
+      <div class="p-community__inner l-inner">
+        <h2 class="c-section__title">COMMUNITY</h2>
+        <div class="p-community__container">
+          <h2 class="p-community__title">SAUNADAOとは？</h2>
+          <p class="p-community__text">サウナ―によるサウナ―のためのサウナコミュニティとして、</p>
+          <p class="p-community__text">コミュニティメンバー同士のサウナ情報の共有や、オフ会などを通じてサウナの魅力を探求し、発信しています。</p>
+          <div class="p-community__link">
+            <a href="#" class="c-button c-button--black">COMMUNITY</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/end p-community-->
+
+    <!--p-goods-->
+    <section class="p-goods" id="goods">
+      <div class="p-goods__inner l-inner">
+        <h2 class="c-section__title">GOODS</h2>
+        <div class="p-goods__container">
+          <div class="p-goods__card">
+            <div class="p-goods_img">
+              <picture>
+                <source srcset="./assets/img/img_goods01.webp" type="image/webp">
+                <img src="./assets/img/img_goods01.jpg" alt="サウナバック（仮）" width="480" height="480">
+              </picture>
+            </div>
+            <h3 class="p-goods__name">サウナバック（仮）</h3>
+          </div>
+          <div class="p-goods__card">
+            <div class="p-goods_img">
+              <picture>
+                <source srcset="./assets/img/img_goods02.webp" type="image/webp">
+                <img src="./assets/img/img_goods02.jpg" alt="サウナボトル（仮）" width="480" height="480">
+              </picture>
+            </div>
+            <h3 class="p-goods__name">サウナボトル（仮）</h3>
+          </div>
+          <div class="p-goods__card">
+            <div class="p-goods_img">
+              <picture>
+                <source srcset="./assets/img/img_goods03.webp" type="image/webp">
+                <img src="./assets/img/img_goods03.jpg" alt="サウナハット（仮）" width="480" height="480">
+              </picture>
+            </div>
+            <h3 class="p-goods__name">サウナハット（仮）</h3>
+          </div>
+          <div class="p-goods__card">
+            <div class="p-goods_img">
+              <picture>
+                <source srcset="./assets/img/img_goods04.webp" type="image/webp">
+                <img src="./assets/img/img_goods04.jpg" alt="サウナタオル（仮）" width="480" height="480">
+              </picture>
+            </div>
+            <h3 class="p-goods__name">サウナタオル（仮）</h3>
+          </div>
+        </div>
+        <div class="p-goods__link">
+          <a href="#" class="c-button c-button--black">ONLINE&nbsp;SHOP</a>
+        </div>
+      </div>
+    </section>
+    <!--/end p-goods-->
+
+    <!--p-news-letter-->
+    <section class="p-news-letter" id="news-letter">
+      <div class="p-news-letter__inner l-inner">
+        <h2 class="c-section__title c-section__title--white">NEWS&nbsp;LETTER</h2>
+        <div class="p-news-letter__container">
+          <p class="p-news-letter__text">サウナの最新情報や便利なグッズ、オフ会やイベントの情報など、読むほどにサウナに詳しくなるニュースレターを発信しています。</p>
+          <p class="p-news-letter__text">ニュースレターの登録は以下からメールアドレスを入力していただき登録ボタンを押してください。</p>
+          <div class="p-news-letter__form">
+            <form action="#" method="post" class="p-form">
+              <div class="p-form__head">
+                <label for="email" class="p-form__label">メールアドレス</label>
+              </div>
+              <div class="p-form__item">
+                <input type="email" name="email" id="email" class="p-form__mail-input">
+              </div>
+              <div class="p-form__button">
+                <button type="submit" class="p-form__submit">登録</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!--/end p-news-letter-->
+
+    <!--p-news-->
+    <section class="p-news">
+      <div class="p-news__inner l-inner">
+        <h2 class="c-section__title">NEWS</h2>
+        <div class="p-news__container">
+          <div class="p-news__card">
+            <time class="p-news__date" datetime="2024-06-01">2024.6.1</time>
+            <h3 class="p-news__title">SAUNADAOからのお知らせ①</h3>
+          </div>
+          <div class="p-news__card">
+            <time class="p-news__date" datetime="2024-06-12">2024.6.12</time>
+            <h3 class="p-news__title">SAUNADAOからのお知らせ②</h3>
+          </div>
+          <div class="p-news__card">
+            <time class="p-news__date" datetime="2024-06-20">2024.6.20</time>
+            <h3 class="p-news__title">SAUNADAOからのお知らせ③</h3>
+          </div>
+          <div class="p-news__card">
+            <time class="p-news__date" datetime="2024-06-30">2024.6.30</time>
+            <h3 class="p-news__title">SAUNADAOからのお知らせ④</h3>
+          </div>
+        </div>
+      </div>
+    </section><!--/end p-news-->
+
+    <!--p-contact-->
+    <section class="p-contact">
+      <div class="p-contact__inner l-inner">
+        <h2 class="p-contact__title">CONTACT</h2>
+        <div class="p-contact__link">
+          <a href="#" class="c-button c-button--black">CONTACT&nbsp;US</a>
+        </div>
+      </div>
+    </section><!--/end p-contact-->
+
+    <!--l-footer-->
+    <footer class="l-footer">
+      <div class="l-inner l-footer__inner">
+        <small class="l-footer__copyright">&copy;SAUNADAO&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
+      </div>
+    </footer>
+    <!--/end l-footer-->
+
+    <!-- js読み込み -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

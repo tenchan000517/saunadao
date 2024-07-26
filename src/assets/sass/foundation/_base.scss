@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+body {
+  color: $cl-text;
+  font-family: $ff-base;
+  font-weight: 400;
+  line-height: $lh-base;
+  font-size: $fz-base;
+
+  &.drawer-active {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+

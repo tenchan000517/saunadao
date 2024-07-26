@@ -1,0 +1,91 @@
+@use "../global" as *;
+.p-about {
+  padding-top: 146px;
+  padding-bottom: 176px;
+
+  @include mq(tb) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  @include mq(sp) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}
+
+.p-about__container {
+  display: flex;
+  gap:calc(89px / $inner-width * 100%);
+  align-items: center;
+  margin-top: -15px;
+  //justify-content: space-between;
+
+  @include mq(tb) {
+    gap:4%;
+  }
+
+  @include mq(sp) {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
+.p-about__body {
+  width: 440px;
+  flex-shrink: 0;
+
+  @include mq(tb) {
+    width: 50%;
+    padding-top: 60px;
+  }
+  @include mq(sp) {
+    width: 100%; //縦並びにするか確認中
+  }
+}
+
+.p-about__title {
+  font-size: 36px;
+  white-space:nowrap;
+
+  @include mq(sp) {
+    font-size: 24px;
+  }
+}
+
+.p-about__text {
+  &:first-of-type {
+    margin-top: 63px;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 15px;
+  }
+
+  @include mq(tb) {
+    &:first-of-type {
+      margin-top: 40px;
+    }
+  }
+
+  @include mq(sp) {
+    font-size: 18px;
+  }
+}
+
+.p-about__link {
+  margin-top: 62px;
+
+  @include mq(tb) {
+    margin-top: 50px;
+  }
+}
+
+.p-about__img {
+    width: calc(660px / 1187px * 100%);
+
+    @include mq(sp) {
+       width: 100%; //縦並びにするか確認中
+       margin-top: 50px;
+    }
+}

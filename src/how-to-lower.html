@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <!-- 検索にヒットしないようにするための記述です -->
+    <meta name="robots" content="noindex" />
+    <title>SAUNADAO</title>
+    <meta name="description" content="サウナで日本を元気にサウナーコミュニティ" />
+
+    <!--OGP設定-->
+    <meta property="og:title" content="SAUNADAO" />
+    <meta
+      property="og:description"
+      content="サウナで日本を元気にサウナーコミュニティ"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/img/ogp.png" />
+
+    <!-- Google Fonts読み込み-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- スタイルシートの読み込みのための記述です -->
+    <link rel="stylesheet" href="./assets/css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+
+    <!--l-header-->
+    <header class="l-header">
+      <div class="l-header__inner">
+        <h1 class="l-header__logo">
+          <a href="#"><img src="./assets/img/img_logo.jpg" alt="SAUNA DAO"></a>
+        </h1>
+        <div class="l-header__menu-wrap">
+          <nav class="l-header__nav">
+            <ul>
+              <li><a href="#" class="l-header__link">HOME</a></li>
+              <li><a href="#news-letter" class="l-header__link">NEWS&nbsp;LETTER</a></li>
+            </ul>
+          </nav>
+          <div class="l-header__sns">
+            <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_x-logo--white.png" alt="X"></a>
+            <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_insta-logo--white.png" alt="Instagram"></a>
+            <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_discord-logo--white.png" alt="Discord"></a>
+          </div>
+        </div>
+        <button id="js-drawer-icon" class="l-header__open l-header__drawer-icon">
+          <span class="l-header__drawer-icon-bar"></span>
+          <span class="l-header__drawer-icon-bar"></span>
+          <span class="l-header__drawer-icon-bar"></span>
+        </button>
+      </div>
+      <div id="js-drawer-content" class="l-header__drawer-content">
+        <nav class="l-header__drawer-menu">
+          <ul>
+            <li><a href="#" class="l-header__link">HOME</a></li>
+            <li><a href="#news-letter" class="l-header__drawer-link">NEWS&nbsp;LETTER</a></li>
+          </ul>
+        </nav>
+        <div class="l-header__drawer-sns">
+          <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_x-logo--white.png" alt="X"></a>
+          <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_insta-logo--white.png" alt="Instagram"></a>
+          <a href="#" class="l-header__sns-icon"><img src="./assets/img/img_discord-logo--white.png" alt="Discord"></a>
+        </div>
+      </div>
+    </header><!--/end l-header-->
+
+    <!--p-how-to-->
+    <section class="p-how-to-lower">
+      <!--p-how-to__bg-middle-->
+      <div class="p-how-to__bg-middle">
+        <div class="l-inner p-how-to-lower__inner">
+          <h2 class="c-section__title c-section__title--white">HOW&nbsp;TO&nbsp;SAUNA</h2>
+          <h3 class="p-how-to-lower__title">サウナの入り方</h3>
+          <div class="p-how-to-lower__container">
+            <div class="p-how-to-lower__card-wrap">
+              <div class="p-how-to-lower__card">
+                <div class="p-how-to-lower__card-head">
+                  <div class="p-how-to-lower__card-number">
+                    <img src="./assets/img/deco_STEP01.png" alt="STEP01">
+                  </div>
+                  <h3 class="p-how-to-lower__card-title">水分補給をする</h3>
+                </div>
+                <div class="p-how-to-lower__card-body">
+                  <p class="p-how-to-lower__card-text">サウナに入ることで日常生活よりも多くの汗をかきます。</p>
+                  <p class="p-how-to-lower__card-text">そのため事前に水分補給をしっかり取っておくことが大切です。</p>
+                  <p class="p-how-to-lower__card-text">油断をすると脱水症状になる恐れもありますのでノドが乾いたと感じる前にコップ一杯程度の水分を摂取するようにしましょう。</p>
+                </div>
+              </div>
+              <div class="p-how-to-lower__img">
+                <img src="./assets/img/img_how-to01.png" alt="サウナの入り方">
+              </div>
+            </div>
+
+            <div class="p-how-to-lower__card-wrap">
+              <div class="p-how-to-lower__card">
+                <div class="p-how-to-lower__card-head">
+                  <div class="p-how-to-lower__card-number">
+                    <img src="./assets/img/deco_STEP02.png" alt="STEP02">
+                  </div>
+                  <h3 class="p-how-to-lower__card-title">サウナに入る（6分～12分程度）</h3>
+                </div>
+                <div class="p-how-to-lower__card-body">
+                  <p class="p-how-to-lower__card-text">サウナに入る前に必ずシャワーで頭髪や身体を洗い、汗をかきやすいように皮脂の汚れを落としておきましょう。</p>
+                  <p class="p-how-to-lower__card-text">サウナの前に湯船に浸かってあらかじめ身体を温めておくことでデトックス効果を短い時間で実感することができるのでおススメです。</p>
+                  <p class="p-how-to-lower__card-text">6分～12分程度サウナに入ります。</p>
+                  <p class="p-how-to-lower__card-text">慣れるまでは5分程度で構いません。</p>
+                </div>
+              </div>
+              <div class="p-how-to-lower__img">
+                <img src="./assets/img/img_how-to02.png" alt="サウナに入る様子">
+              </div>
+            </div>
+
+            <div class="p-how-to-lower__card-wrap">
+              <div class="p-how-to-lower__card">
+                <div class="p-how-to-lower__card-head">
+                  <div class="p-how-to-lower__card-number">
+                    <img src="./assets/img/deco_STEP03.png" alt="STEP03">
+                  </div>
+                  <h3 class="p-how-to-lower__card-title">水風呂で身体を冷やす（1～2分程度）</h3>
+                </div>
+                <div class="p-how-to-lower__card-body">
+                  <p class="p-how-to-lower__card-text">サウナで十分に身体が温まったら、汗を洗い流して水風呂に入ります。</p>
+                  <p class="p-how-to-lower__card-text">いきなり水風呂に入ると身体がびっくりしてしまうので、慣れていない方は手足に水をかけてからゆっくりと心臓から遠いところから入るようにしてください。</p>
+                  <p class="p-how-to-lower__card-text">水風呂は1分～2分程度、息が冷たく感じるくらいが目安です。</p>
+                </div>
+              </div>
+              <div class="p-how-to-lower__img">
+                <img src="./assets/img/img_how-to03.png" alt="水風呂に入る様子" class="p-how-to-lower--w80">
+              </div>
+            </div>
+
+            <div class="p-how-to-lower__card-wrap">
+              <div class="p-how-to-lower__card">
+                <div class="p-how-to-lower__card-head">
+                  <div class="p-how-to-lower__card-number">
+                    <img src="./assets/img/deco_STEP04.png" alt="STEP04">
+                  </div>
+                  <h3 class="p-how-to-lower__card-title">外気浴をする（5分～10分程度）</h3>
+                </div>
+                <div class="p-how-to-lower__card-body">
+                  <p class="p-how-to-lower__card-text">水風呂で身体を程よく冷ましたら、露天風呂の脇やサウナ室の近くに置かれている椅子でリラックスすると、</p>
+                  <p class="p-how-to-lower__card-text">頭が少しホワ～っとする心地の良い感覚を味わえます。</p>
+                  <p class="p-how-to-lower__card-text">サウナ―の間ではこの状態を「ととのう」と表現されることが多いです。</p>
+                </div>
+              </div>
+              <div class="p-how-to-lower__img">
+                <img src="./assets/img/img_how-to04.png" alt="外気浴の様子">
+              </div>
+            </div>
+
+          </div>
+        </div><!--/end p-how-to-lower__inner-->
+      </div><!--/end p-how-to__bg-middle-->
+
+      <!--p-how-to__bg-light-->
+      <div class="p-how-to__bg-light">
+        <div class="l-inner p-how-to-lower__inner">
+          <h3 class="p-how-to-lower__title p-how-to-lower__title--manners">サウナのマナー</h3>
+          <div class="p-how-to-lower__container">
+            <div class="p-how-to-lower__card-wrap">
+              <div class="p-how-to-lower__card">
+                <div class="p-how-to-lower__card-head">
+                  <div class="p-how-to-lower__card-number">
+                    <img src="./assets/img/deco_POINT01.png" alt="POINT01">
+                  </div>
+                  <h3 class="p-how-to-lower__card-title">サウナに入る前に水滴をふく</h3>
+                </div>
+                <div class="p-how-to-lower__card-body">
+                  <p class="p-how-to-lower__card-text">シャワーの水や汗をかいたまま入るとマットを濡らしてしまいますので、身体の水滴はふき取ってから入るようにしましょう。</p>
+                  <p class="p-how-to-lower__card-text">また、身体の水分が一気に高温になり身体の芯まで温まる前に身体の表面温度が上がってしまい苦しくなってしまいます。</p>
+                  <p class="p-how-to-lower__card-text">水分をふき取ってから入ることで発汗効果も高まりますので必ず身体の水滴をふいてからサウナに入りましょう。</p>
+                </div>
+              </div>
+              <div class="p-how-to-lower__img">
+                <img src="./assets/img/img_manners01.png" alt="タオルで身体を拭く様子">
+              </div>
+            </div>
+
+            <div class="p-how-to-lower__card-wrap">
+              <div class="p-how-to-lower__card">
+                <div class="p-how-to-lower__card-head">
+                  <div class="p-how-to-lower__card-number">
+                    <img src="./assets/img/deco_POINT02.png" alt="POINT02">
+                  </div>
+                  <h3 class="p-how-to-lower__card-title">タオルを絞って入る</h3>
+                </div>
+                <div class="p-how-to-lower__card-body">
+                  <p class="p-how-to-lower__card-text">濡れた状態で持ち込むと、床が濡れて滑ったり、マットが塗れたり室温が下がり迷惑がかかってしまいます。</p>
+                  <p class="p-how-to-lower__card-text">もちろんサウナ室の中でタオルを絞ることもマナー違反なのでやめましょう。</p>
+                  <p class="p-how-to-lower__card-text">タオルが塗れているとかいた汗も十分に吸収してくれませんので、サウナに入る際には必ずタオルを絞ってから入るようにしましょう。</p>
+                </div>
+              </div>
+              <div class="p-how-to-lower__img">
+                <img src="./assets/img/img_manners02.png" alt="タオルを絞る様子">
+              </div>
+            </div>
+
+            <div class="p-how-to-lower__card-wrap">
+              <div class="p-how-to-lower__card">
+                <div class="p-how-to-lower__card-head">
+                  <div class="p-how-to-lower__card-number">
+                    <img src="./assets/img/deco_POINT03.png" alt="POINT03">
+                  </div>
+                  <h3 class="p-how-to-lower__card-title">水風呂に入る前に汗を流す</h3>
+                </div>
+                <div class="p-how-to-lower__card-body">
+                  <p class="p-how-to-lower__card-text">サウナで汗をかき温まった身体を冷やしたくてすぐに水風呂に入りたくなりがちですが、</p>
+                  <p class="p-how-to-lower__card-text">サウナで汗をかいたまま水風呂に入ると水風呂の清潔さを保てませんので、水風呂に入る前にしっかりと汗を流しましょう。</p>
+                  <p class="p-how-to-lower__card-text">汗を流す際は水風呂の脇にある桶で身体を流してもいいですし、シャワーで流しても構いません。</p>
+                </div>
+              </div>
+              <div class="p-how-to-lower__img">
+                <img src="./assets/img/img_manners03.png" alt="シャワーで汗を流す様子" class="p-how-to-lower--w80">
+              </div>
+            </div>
+
+            <div class="p-how-to-lower__card-wrap">
+              <div class="p-how-to-lower__card">
+                <div class="p-how-to-lower__card-head">
+                  <div class="p-how-to-lower__card-number">
+                    <img src="./assets/img/deco_POINT04.png" alt="POINT04">
+                  </div>
+                  <h3 class="p-how-to-lower__card-title">水風呂では潜らない</h3>
+                </div>
+                <div class="p-how-to-lower__card-body">
+                  <p class="p-how-to-lower__card-text">水風呂で潜ると、汗や皮脂が流れ出てしまい不衛生です。</p>
+                  <p class="p-how-to-lower__card-text">水風呂は多くの方が利用する浴槽ですので潜る行為は避けましょう。</p>
+                  <p class="p-how-to-lower__card-text">サウナを最大限楽しむために周りの方への配慮を忘れずみんなで楽しめるようにしっかりとマナーを守ってサウナを楽しみましょう！</p>
+                </div>
+              </div>
+              <div class="p-how-to-lower__img">
+                <img src="./assets/img/img_manners04.png" alt="水風呂に入る様子">
+              </div>
+            </div>
+
+          </div>
+        </div><!--/end p-how-to-lower__inner-->
+      </div><!--/end p-how-to__bg-light-->
+    </section><!--/end p-how-to-->
+
+    <!--p-news-letter-->
+    <section class="p-news-letter" id="news-letter">
+      <div class="p-news-letter__inner l-inner">
+        <h2 class="c-section__title c-section__title--white">NEWS&nbsp;LETTER</h2>
+        <div class="p-news-letter__container">
+          <p class="p-news-letter__text">サウナの最新情報や便利なグッズ、オフ会やイベントの情報など、読むほどにサウナに詳しくなるニュースレターを発信しています。</p>
+          <p class="p-news-letter__text">ニュースレターの登録は以下からメールアドレスを入力していただき登録ボタンを押してください。</p>
+          <div class="p-news-letter__form">
+            <form action="#" method="post" class="p-form">
+              <div class="p-form__head">
+                <label for="email" class="p-form__label">メールアドレス</label>
+              </div>
+              <div class="p-form__item">
+                <input type="email" name="email" id="email" class="p-form__mail-input">
+              </div>
+              <div class="p-form__button">
+                <button type="submit" class="p-form__submit">登録</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!--/end p-news-letter-->
+
+    <!--p-contact-->
+    <section class="p-contact">
+      <div class="p-contact__inner l-inner">
+        <h2 class="p-contact__title">CONTACT</h2>
+        <div class="p-contact__link">
+          <a href="#" class="c-button c-button--black">CONTACT&nbsp;US</a>
+        </div>
+      </div>
+    </section><!--/end p-contact-->
+
+    <!--l-footer-->
+    <footer class="l-footer">
+      <div class="l-inner l-footer__inner">
+        <small class="l-footer__copyright">&copy;SAUNADAO&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
+      </div>
+    </footer>
+    <!--/end l-footer-->
+
+    <!-- js読み込みのための記述です -->
+    <script src="./assets/js/lib/swiper-bundle.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

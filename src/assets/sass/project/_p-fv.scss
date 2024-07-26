@@ -1,0 +1,66 @@
+@use "../global" as *;
+
+.p-fv {
+  padding-top: $header-height;
+  background: url(../img/img_fv.webp) no-repeat center center / cover;
+
+  .no-webp & {
+    background: url(../img/img_fv.jpg) no-repeat center center / cover;
+  }
+
+  @include mq(tb) {
+    padding-top: $header-height-md;
+  }
+  @include mq(sp) {
+    padding-top: $header-height-sm;
+  }
+}
+
+.p-fv__inner {
+  height: calc(100vh - $header-height);
+  max-width: calc($inner-width + 40px * 2);
+  margin-inline: auto;
+  position: relative;
+  padding-inline: 40px;
+
+  @include mq(tb) {
+    height: calc(100vh - $header-height-md);
+    padding-inline: 32px;
+  }
+
+  @include mq(sp) {
+    height: calc(100vh - $header-height-sm);
+    padding-inline: 20px;
+  }
+}
+
+.p-fv__contents {
+  position: absolute;
+  max-width:100%;
+  left: 40px;
+  bottom:calc(100px / 930px * 100vh);
+
+  @include mq(sp) {
+    left: 20px;
+  }
+}
+
+.p-fv__title {
+  color: $cl-text-white;
+  width: fit-content;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  @include mq(sp) {
+    font-size: 30px;
+  }
+}
+.p-fv__link {
+  margin-top: 57px;
+}
+
